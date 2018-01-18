@@ -5,23 +5,22 @@ Rather than relying on older algorithms such as VADER and Textblob, this method 
 
 #### **Usage:**
 
-######  Getting the data:
+#####  Getting the data:
 
 A training set of data from Stanford was used to train the model.It can be found [here.](http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip) 
-A different training set can also be used to train the model as well. The path for the training data is **data/train.csv** and the format is as follows.
-
-
-
-Similarily the testing data (tweets which are to be predicted) as stored in the path /data/test.csv.
+A different training set can also be used to train the model as well. The path for the training data is **data/training.csv**
 Any other data set can be used and placed in the above path to obtain the prediciton.
 The format for the data is as follows:
+
+
 | tweet  | Sentiment |
 | ------------- | ------------- |
 | eeeks i like some1 :X :S. gossh, i promised myself not again! but just cant help it this time   | 1  |
-| @euniqueflair You would be very happy with a Razer Mamba  http://is.gd/13mMG *recommended!  | 1  |
+| @euniqueflair You would be very happy with a Razer Mamba  http://is.gd/13mMG recommended!  | 1  |
 | Freakin' crap! I just bit my tongue on accident.  | 0  |
 
-###### Extracting features:
+
+##### Extracting features:
 
 The following features were added to the existing dataset.
 1. No. of positive emoticons(/data/positive.txt)
@@ -37,7 +36,7 @@ python add_features.py -f training.csv
 ```
 _Note: Pass the name of the data file as the parameter for -f_
 
-###### Prediction:
+##### Prediction:
 
 After the Analytical Base Table is ready for sentiment classification, various machine-learning algorithms can be used to classify the tweets as positive or negative.
 Run the script to check the results of the prediction.
