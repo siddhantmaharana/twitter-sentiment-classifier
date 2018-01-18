@@ -30,7 +30,10 @@ The following features were added to the existing dataset.
 5. No. of question marks
 6. No. of hyperlinks
 
-Prior to fitting the model and using machine learning algorithms for training, we need to represent it in a bag of words model. Plus to add the above features to the training and the testing data set, the following script is run on the script.
+Prior to fitting the model and using machine learning algorithms for training, we need to represent it in a bag of words model. 
+A unigram is simply a N-gram of size one. For each unique tokenized word in a tweet, a unigram feature is created for
+the classifier. 
+Plus to add the above features to the training and the testing data set, the following script is run on the script.
 ```
 python add_features.py -f training.csv
 ```
