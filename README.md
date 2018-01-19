@@ -30,10 +30,9 @@ The following features were added to the existing dataset.
 5. No. of question marks
 6. No. of hyperlinks
 
-Prior to fitting the model and using machine learning algorithms for training, we need to represent it in a bag of words model. 
-A unigram is simply a N-gram of size one. For each unique tokenized word in a tweet, a unigram feature is created for
-the classifier. 
-Plus to add the above features to the training and the testing data set, the following script is run on the script.
+Prior to fitting the model and using machine learning algorithms, we need to represent it in a bag-of-words model. 
+For each unique tokenized word in a tweet, a unigram feature is created for the classifier. 
+Plus to add the above features to the data set, the following script should be run on the data.
 ```
 python add_features.py -f training.csv
 ```
@@ -41,7 +40,7 @@ _Note: Pass the name of the data file as the parameter for -f_
 
 ##### Prediction:
 
-After the Analytical Base Table is ready for sentiment classification, various machine-learning algorithms can be used to classify the tweets as positive or negative.
+After the Analytical-Base-Table is ready for sentiment classification, various machine-learning algorithms can be used to classify the tweets as positive or negative.
 Run the script to check the results of the prediction.
 ```
 python predict.py
